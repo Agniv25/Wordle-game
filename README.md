@@ -4,7 +4,7 @@ This repository contains a clone of the famous Wordle game implemented in JavaSc
 
 ## How to Play
 
-1. Clone or download the repository to your local machine (if you want to play the game then click (here)[https://agniv25.github.io/wordle-game/].
+1. Clone or download the repository to your local machine (if you want to play the game then click [here](https://agniv25.github.io/wordle-game/).
 2. Open the `index.html` file in a web browser.
 3. The game will start by fetching a random meaningful word from the first API.
 4. Guess the word by entering letters one at a time in the input field provided.You can either type on the physical keyboard or use the virtual keyboard.
