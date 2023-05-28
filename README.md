@@ -1,4 +1,4 @@
-# wordle-game# Wordle Game Clone
+# Wordle Game Clone
 
 This repository contains a clone of the famous Wordle game implemented in JavaScript. The game utilizes two APIs to provide an interactive word-guessing experience. One API is used to generate a random meaningful word, and another API is used to check whether the word entered by the user is meaningful or not.
 
