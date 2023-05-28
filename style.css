@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+hr {
+  border-top: 1px solid grey;
+}
+
+.tile-container {
+  width: 50vmin;
+  height: 60vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+  font-size: large;
+}
+.tile-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tile-container .tile {
+  width: 9vmin;
+  height: 9vmin;
+  margin: 0.25rem;
+  border: 0.2rem solid rgb(66, 66, 66);
+}
+.key-container {
+  width: 90vmin;
+  height: 33vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.05rem;
+}
+.key {
+  width: 7.5vmin;
+  height: 10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4vmin;
+  background-color: grey;
+  border-radius: 10%;
+  margin: 0.2rem;
+  font-weight: 200;
+}
+#ENTER {
+  width: 15vmin;
+  font-size: 3vmin;
+}
+.key:hover {
+  background-color: rgb(71, 64, 64);
+  cursor: pointer;
+}
+.flipping {
+  animation: flip 0.75s;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotatex(0);
+  }
+  50% {
+    transform: rotatex(90deg);
+  }
+  100% {
+    transform: rotatex(0deg);
+  }
+}
+.green {
+  background-color: #538d4e !important;
+}
+.yellow {
+  background-color: #b59f3b !important;
+}
+.grey {
+  background-color: #3a3a3c !important;
+}
+.notify {
+  width: 6rem;
+  height: 1.8rem;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  margin: 5px;
+
+  position: absolute;
+  top: 2.5rem;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: small;
+}
+.taken {
+  border-color: rgb(128, 127, 127) !important;
+  animation: taken 0.2s;
+}
+@keyframes taken {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
