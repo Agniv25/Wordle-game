@@ -106,7 +106,8 @@ function display(e) {
       document
         .querySelector("#row-" + rowIndex + "-tile-" + tileIndex)
         .classList.remove("taken");
-      output = output.substring(4, 1);
+      output = output.substring(0, output.length - 1);
+      console.log(output);
       tileIndex--;
     }
     return;
@@ -163,7 +164,7 @@ function matchAns() {
         item.classList.add("green");
 
         tempAns = tempAns.replace(item.innerHTML, "");
-        console.log(tempAns);
+        // console.log(tempAns);
 
         key.classList.add("green");
       } else if (tempAns.includes(item.innerHTML)) {
